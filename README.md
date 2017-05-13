@@ -21,20 +21,24 @@ Or install it yourself as:
 
 ## Usage
 
-In your ApplicationController:
+```ruby
+CopyrightDetailsView::Renderer.copyright 'Oscar Pérez', 'All rights reserved'
+```
+
+## Example
+
+In your ApplicationHelper:
 
 ```ruby
-before_action :set_copyright
-
-  def set_copyright
-    @copyright = CopyrightDetailsView::Renderer.copyright 'My Name', 'All rights reserved'
-  end
+def copyright_generator
+    CopyrightDetailsView::Renderer.copyright 'Oscar Pérez', 'All rights reserved'
+end
 ```
 
 In your View:
 
 ```html
-<%= @copyright %>
+<%= copyright_generator %>
 ```
 
 ## Development
