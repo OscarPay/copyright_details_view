@@ -1,6 +1,6 @@
 # CopyrightDetailsView
 
-Various view specific methods for applications I use.
+> Various view specific methods for applications I use.
 Provides generated HTML data for Rails applications.
 
 ## Installation
