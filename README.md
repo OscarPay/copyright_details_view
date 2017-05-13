@@ -33,7 +33,9 @@ before_action :set_copyright
 
 In your View:
 
+```ruby
 <%= @copyright %>
+```
 
 ## Development
 
